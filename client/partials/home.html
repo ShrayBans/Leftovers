@@ -3,7 +3,12 @@
 
 	<div class="form-group row">
 		<form name="macros" ng-submit="submitMacros()">
-
+			<span class="col-xs-2"><label>Chipotle</label><input type="checkbox" ng-model="restaurants.chipotle"/></span>
+			<span class="col-xs-2"><label>McDonalds</label><input type="checkbox" ng-model="restaurants.mcdonalds"/></span>
+			<span class="col-xs-2"><label>Taco Bell</label><input type="checkbox" ng-model="restaurants.tacobell"/></span>
+			<span class="col-xs-2"><label>Subway</label><input type="checkbox" ng-model="restaurants.subway"/></span>
+			<span class="col-xs-2"><label>In N' Out</label><input type="checkbox" ng-model="restaurants.innout"/></span>
+			<span class="col-xs-2"><label>Starbucks</label><input type="checkbox" ng-model="restaurants.starbucks"/></span>
 			<label class="col-xs-2 col-form-label">Calories</label>
 				<input class="col-xs-9" type="number" min="0" max="4000" step="50" name="calories" ng-model="calories" ng-change="updateSliders()" ng-blur="errorHandle()"/>
 				<br/><br/>
@@ -13,15 +18,12 @@
 
 			<label class="col-xs-2 col-form-label">Carbs</label>
 				<rzslider class="col-xs-9" rz-slider-model="slider.carbs"></rzslider> 
-				<!-- <input class="col-xs-9" type="number" min="0" step="5" name="carbs" ng-model="carbs" /> -->
 			
 			<label class="col-xs-2 col-form-label">Protein</label>
 				<rzslider class="col-xs-9" rz-slider-model="slider.protein"></rzslider>
-				<!-- <input class="col-xs-9" type="number" min="0" step="5" name="protein" ng-model="protein" /> -->
 			
 			<label class="col-xs-2 col-form-label">Fats</label>
 				<rzslider class="col-xs-9" rz-slider-model="slider.fats"></rzslider> 
-				<!-- <input class="col-xs-9" type="number" min="0" step="5" name="fats" ng-model="fats" /> -->
 				<div class="macro-display">
 					<br/><span class="macros">Carbohydrates: </span>{{slider.carbs}}
 					<br/><span class="macros">Protein: </span>{{slider.protein}}

@@ -2,6 +2,10 @@
 
 <form>
   <input type="text"></input>
-  {{name}}
+  {{calories}}
   <button type="submit">Save</button>
 </form>
+
+<ul>
+	<li ng-repeat="(key, value) in restaurants">{{key}}, {{value}}</li>
+</ul>
