@@ -9,9 +9,10 @@ app.use(express.static(path.join(__dirname, './client/')));
 app.get('/food/:restaurant',function(req, res) {
 	// console.log(req.params.restaurant);
 	for(var prop in json) {
-		if (prop==='starbucks');
+		if (prop===req.params.restaurant) {
+			res.json(json[prop]);
+		}
 	}
-	res.json(json);
 });
 
 app.listen(3000);
