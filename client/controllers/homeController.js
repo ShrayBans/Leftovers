@@ -1,6 +1,6 @@
 angular
-  .module('HomeController', ['ngRoute', 'FoodFactory'])
-  .controller('HomeController', function ($scope, $location, CalorieFactory) {
+  .module('HomeController', ['ngRoute', 'FoodFactory', 'CalorieFactory'])
+  .controller('HomeController', function ($scope, $location, CalorieFactory, FoodFactory) {
 
   	$scope.slider = 
   		{
@@ -31,7 +31,11 @@ angular
   		CalorieFactory.calories = $scope.calories;
   		CalorieFactory.restaurants = $scope.restaurants;
   		CalorieFactory.completed = true;
+  		console.log('Restaurants', CalorieFactory.getRestaurantsArray());
+  		FoodFactory.getList(CalorieFactory.getRestaurantsArray());
   		$location.path('/results');
   	};
+
+
 
 });

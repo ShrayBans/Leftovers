@@ -19,14 +19,14 @@
 	"chipotle": 
 	[	
 		{ 
-			"name": "Burrito Bowl with Steak, Black Beans, White Rice, Cheese",
+			"name": "Burrito Bowl (Steak & Black Beans)",
 			"calories": "460",
 			"carbs": "36",
 			"protein": "46",
 			"fats": "15"
 		},
 		{
-			"name": "Salad with Brown Rice, Black Beans, and Fajite Veggies",
+			"name": "Salad (Brown Rice & Black Beans)",
 			"calories": "430",
 			"carbs": "76",
 			"protein": "15.5",

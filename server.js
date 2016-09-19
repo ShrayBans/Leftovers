@@ -16,4 +16,8 @@ app.get('/food/:restaurant',function(req, res) {
 	}
 });
 
+app.get('/food',function(req, res) {
+	res.json(json);
+});
+
 app.listen(3000);

@@ -17,6 +17,7 @@ angular
   		for(var prop in this.restaurants) {
   			if (this.restaurants[prop]) res.push({'restaurant': prop});
   		}
+  		object.restArray = res;
   		return res;
   	};
 
