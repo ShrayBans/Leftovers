@@ -14,8 +14,8 @@ function configFunction($routeProvider, $locationProvider) {
       templateUrl: './partials/home.html',
       controller: 'HomeController'
     })
-    .when('/blah', {
-      templateUrl: './partials/options.html',
+    .when('/results', {
+      templateUrl: './partials/results.html',
       controller: 'OptionsController'
     })
     .otherwise({

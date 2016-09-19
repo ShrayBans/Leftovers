@@ -1,3 +1,23 @@
-<h1>Home</h1>
-{{unit}}
+<div class="container">
+	<div class="form-group row">
+		<form name="macros" ng-submit="submitMacros()">
 
+			<label class="col-xs-2 col-form-label">Calories</label>
+				<input class="col-xs-9" type="number" min="0" step="50" name="calories" ng-model="calories" />
+			
+			<br/>
+			<div><h2>	OR </h2></div>
+
+			<label class="col-xs-2 col-form-label">Carbs</label>
+				<input class="col-xs-9" type="number" min="0" step="5" name="carbs" ng-model="carbs" />
+			
+			<label class="col-xs-2 col-form-label">Protein</label>
+				<input class="col-xs-9" type="number" min="0" step="5" name="protein" ng-model="protein" />
+			
+			<label class="col-xs-2 col-form-label">Fats</label>
+				<input class="col-xs-9" type="number" min="0" step="5" name="fats" ng-model="fats" />
+			
+			<input class="col-md-2" type="submit" value="Find Meals" />
+		</form>
+	</div>
+</div>
