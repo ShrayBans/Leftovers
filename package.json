@@ -1,0 +1,19 @@
+{
+  "name": "angular-skills-builder",
+  "version": "0.1.0",
+  "description": "Angular Skills Builder Codesmith.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "mocha-phantomjs --web-security=false ./test/test.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.0.0",
+    "ecstatic": "^0.8.0",
+    "express": "^4.13.3",
+    "mocha": "^2.2.5",
+    "mocha-phantomjs": "^4.0.1"
+  }
+}
