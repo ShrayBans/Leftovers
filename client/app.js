@@ -12,5 +12,12 @@ function configFunction($routeProvider, $locationProvider) {
     .when('/', {
       templateUrl: './partials/home.html',
       controller: 'HomeController'
+    })
+    .when('/blah', {
+      templateUrl: './partials/about.html',
+      controller: 'HomeController'
+    })
+    .otherwise({
+        redirectTo: '/'
     });
 }
