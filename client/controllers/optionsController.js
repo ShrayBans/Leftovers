@@ -10,14 +10,21 @@ angular
   	subway: "Subway",
   	innout: "In N' Out",
   	starbucks: "Starbucks"
-  }
+  };
 
   $scope.calories = CalorieFactory.getCalories();
   $scope.restaurants = FoodFactory.getData();
 
   $scope.formatRestaurant = function(unformatted) {
   	return $scope.formatted[unformatted];
-  }
+  };
+
+  $scope.startOver = function() {
+  	$location.path('/');
+  	CalorieFactory.completed = false;
+  };
+
+
   // for (var i = 0; i < $scope.restaurants.length; i++) {
   // 	$scope.num = 0;
   // 	// console.log(i, $scope.restaurants[i].restaurant)
