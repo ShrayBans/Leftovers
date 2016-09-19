@@ -1,23 +1,33 @@
 <div class="container">
+  <div class="col-md-12 instructions">Please enter your leftover calories or macronutrients</div>
+
 	<div class="form-group row">
 		<form name="macros" ng-submit="submitMacros()">
 
 			<label class="col-xs-2 col-form-label">Calories</label>
-				<input class="col-xs-9" type="number" min="0" step="50" name="calories" ng-model="calories" />
-			
+				<input class="col-xs-9" type="number" min="0" max="4000" step="50" name="calories" ng-model="calories" ng-change="updateSliders()" ng-blur="errorHandle()"/>
+				<br/><br/>
+				<div>{{errorMsg}}</div>
 			<br/>
 			<div><h2>	OR </h2></div>
 
 			<label class="col-xs-2 col-form-label">Carbs</label>
-				<input class="col-xs-9" type="number" min="0" step="5" name="carbs" ng-model="carbs" />
+				<rzslider class="col-xs-9" rz-slider-model="slider.carbs"></rzslider> 
+				<!-- <input class="col-xs-9" type="number" min="0" step="5" name="carbs" ng-model="carbs" /> -->
 			
 			<label class="col-xs-2 col-form-label">Protein</label>
-				<input class="col-xs-9" type="number" min="0" step="5" name="protein" ng-model="protein" />
+				<rzslider class="col-xs-9" rz-slider-model="slider.protein"></rzslider>
+				<!-- <input class="col-xs-9" type="number" min="0" step="5" name="protein" ng-model="protein" /> -->
 			
 			<label class="col-xs-2 col-form-label">Fats</label>
-				<input class="col-xs-9" type="number" min="0" step="5" name="fats" ng-model="fats" />
-			
-			<input class="col-md-2" type="submit" value="Find Meals" />
+				<rzslider class="col-xs-9" rz-slider-model="slider.fats"></rzslider> 
+				<!-- <input class="col-xs-9" type="number" min="0" step="5" name="fats" ng-model="fats" /> -->
+				<div class="macro-display">
+					<br/><span class="macros">Carbohydrates: </span>{{slider.carbs}}
+					<br/><span class="macros">Protein: </span>{{slider.protein}}
+					<br/><span class="macros">Fats: </span> {{slider.fats}}
+				<br/><input class="btn btn-primary col-md-2" type="submit" value="Find Meals" />
+				</div>
 		</form>
 	</div>
 </div>

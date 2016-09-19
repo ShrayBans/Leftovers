@@ -1,9 +1,15 @@
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
 .container {
 	text-align: center;
 }
 
 .instructions {
-	text-align: left;
+	margin: 5px 0 20px;
+	font-size: 18px;
+	/*text-align: left;*/
 }
 
 label, input {
@@ -13,4 +19,26 @@ label, input {
 input {
 	border-radius: 5px;
 	border: 1px solid #688458;
+}
+
+header .logo {
+	display: inline-block;
+	height: 50px;
+	vertical-align: text-bottom;
+}
+
+header h1 {
+	display: inline-block;
+	margin-top: 30px;
+	font-weight: 700;
+	font-size: 50px;
+}
+
+.macro-display {
+	font-size: 25px;
+}
+
+.macros {
+	font-weight: 700;
+	color: #2d5b89;
 }

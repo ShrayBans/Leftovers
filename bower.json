@@ -2,7 +2,8 @@
   "name": "Leftovers",
   "version": "0.0.0",
   "homepage": "",
-  "authors": [ "Shray Bansal"
+  "authors": [
+    "Shray Bansal"
   ],
   "license": "MIT",
   "ignore": [
@@ -16,6 +17,7 @@
     "angular": "^1.5.0",
     "angular-mocks": "^1.5.0",
     "angular-route": "^1.5.0",
-    "angular-material": "^1.0.5"
+    "angular-material": "^1.0.5",
+    "angularjs-slider": "^5.5.0"
   }
 }

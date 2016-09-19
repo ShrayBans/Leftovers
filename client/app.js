@@ -1,8 +1,11 @@
 var app = angular
   .module('myApp', [
+  	'rzModule',
     'ngRoute',
     'HomeController',
-    'OptionsController'
+    'OptionsController',
+    'FoodFactory',
+    'CalorieFactory'
   ]);
 
 app.config(configFunction);

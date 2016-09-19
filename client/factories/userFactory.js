@@ -1,3 +1,0 @@
-/**
- * UserFactory belongs here
- */
