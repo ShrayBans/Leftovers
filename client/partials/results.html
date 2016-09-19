@@ -1,11 +1,10 @@
-<h1>Choose Options</h1>
+<h2>Possible Diet Combinations for <span class="macros">{{calories}}</span> Calories</h2>
 
-<form>
-  <input type="text"></input>
-  {{calories}}
-  <button type="submit">Save</button>
-</form>
-
+<!-- <table>
+	<tr ng-repeat>
+		<td colspan=""></td>
+	</tr>
+</table> -->
 <ul>
-	<li ng-repeat="(key, value) in restaurants">{{key}}, {{value}}</li>
+	<li ng-repeat="item in restaurants">{{item.restaurant}}</li>
 </ul>

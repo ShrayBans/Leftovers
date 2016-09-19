@@ -12,6 +12,14 @@ angular
   		return this.restaurants;
   	};
 
+  	object.getRestaurantsArray = function() {
+  		var res = [];
+  		for(var prop in this.restaurants) {
+  			if (this.restaurants[prop]) res.push({'restaurant': prop});
+  		}
+  		return res;
+  	};
+
   	object.calories = 2900;
 
   	object.restaurants = {
