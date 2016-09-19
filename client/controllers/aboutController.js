@@ -1,4 +1,0 @@
-/**
- * AboutController goes here
- */
-

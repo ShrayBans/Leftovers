@@ -1,7 +1,8 @@
 var app = angular
   .module('myApp', [
     'ngRoute',
-    'Codesmith.HomeController',
+    'HomeController',
+    'OptionsController'
   ]);
 
 app.config(configFunction);
@@ -14,8 +15,8 @@ function configFunction($routeProvider, $locationProvider) {
       controller: 'HomeController'
     })
     .when('/blah', {
-      templateUrl: './partials/about.html',
-      controller: 'HomeController'
+      templateUrl: './partials/options.html',
+      controller: 'OptionsController'
     })
     .otherwise({
         redirectTo: '/'
