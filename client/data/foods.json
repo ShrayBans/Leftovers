@@ -1,0 +1,104 @@
+{
+	"mcdonalds": 
+	[	
+		{ 
+			"name": "Artisan Grilled Chicken Sandwich",
+			"calories": "360",
+			"carbs": "43",
+			"protein": "32",
+			"fats": "6"
+		},
+		{
+			"name": "Chicken McNuggets",
+			"calories": "340",
+			"carbs": "24",
+			"protein": "13",
+			"fats": "22"
+		}
+	],
+	"chipotle": 
+	[	
+		{ 
+			"name": "Burrito Bowl with Steak, Black Beans, White Rice, Cheese",
+			"calories": "460",
+			"carbs": "36",
+			"protein": "46",
+			"fats": "15"
+		},
+		{
+			"name": "Salad with Brown Rice, Black Beans, and Fajite Veggies",
+			"calories": "430",
+			"carbs": "76",
+			"protein": "15.5",
+			"fats": "10"
+		}
+	],
+	"tacobell": 
+	[	
+		{ 
+			"name": "Shredded Chicken Burrito",
+			"calories": "400",
+			"carbs": "45",
+			"protein": "16",
+			"fats": "18"
+		},
+		{
+			"name": "Cantina Veggie Power Burrito",
+			"calories": "430",
+			"carbs": "52",
+			"protein": "15",
+			"fats": "19"
+		}
+	],
+	"subway": 
+	[	
+		{ 
+			"name": "Six-inch Turkey Breast on 9-Grain Wheat",
+			"calories": "390",
+			"carbs": "49",
+			"protein": "23",
+			"fats": "14"
+		},
+		{
+			"name": "Six-inch Veggie Sub on 9-Grain Wheat",
+			"calories": "380",
+			"carbs": "47",
+			"protein": "13",
+			"fats": "17"
+		}
+	],
+	"innout": 
+	[	
+		{ 
+			"name": "Protein Style Cheeseburger",
+			"calories": "330",
+			"carbs": "11",
+			"protein": "18",
+			"fats": "25"
+		},
+		{
+			"name": "Hamburger with Onion, Ketchup, and Mustard",
+			"calories": "310",
+			"carbs": "41",
+			"protein": "16",
+			"fats": "10"
+		}
+	],
+	"starbucks": 
+	[	
+		{ 
+			"name": "Protein Bistro Box",
+			"calories": "360",
+			"carbs": "43",
+			"protein": "13",
+			"fats": "19"
+		},
+		{
+			"name": "Edamame Hummus Wrap",
+			"calories": "490",
+			"carbs": "47",
+			"protein": "12",
+			"fats": "27"
+		}
+	]
+}

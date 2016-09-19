@@ -5,11 +5,20 @@ angular
 
   $scope.calories = CalorieFactory.getCalories();
   $scope.restaurants = CalorieFactory.getRestaurantsArray();
-  $scope.data = [];
-  for (var i = 0; i < $scope.restaurants.length; i++) {
-  	$scope.restaurants
-  }
-  
+  // $scope.data = [];
+  FoodFactory.getList($scope.restaurants[0].restaurant)
+  		.then(function(res) {
+  			console.log(res);
+  			// $scope.restaurants[i].data = response;
+  		});
 
-  $scope.data = FoodFactory.getList()
+  // for (var i = 0; i < $scope.restaurants.length; i++) {
+  // 	console.log(i, $scope.restaurants[i].restaurant)
+  // 	FoodFactory.getList($scope.restaurants[i].restaurant)
+  // 		.then(function(res) {
+  // 			console.log(i, res);
+  // 			$scope.restaurants[i].data = response;
+  // 		});
+  // }
+
 });

@@ -10,6 +10,7 @@ app.get('/food/:restaurant',function(req, res) {
 	// console.log(req.params.restaurant);
 	for(var prop in json) {
 		if (prop===req.params.restaurant) {
+			console.log(json[prop]);
 			res.json(json[prop]);
 		}
 	}
