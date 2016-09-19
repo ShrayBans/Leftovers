@@ -5,31 +5,36 @@
 		<td colspan=""></td>
 	</tr>
 </table> -->
-<table>
-<!-- 	<thead>
+<div class="table-responsive">
+	<table class="table left">
+		<thead>
+			<tr class="">
+				<td>Name</td>
+				<td>Carbs</td>
+				<td>Protein</td>
+				<td>Fats</td>
+				<td>Calories</td>
+			</tr>
+		</thead>
+		<tbody ng-repeat="(key, value) in restaurants">
+			<tr class="danger">
+				<td class="bold" colspan="1">
+					{{formatRestaurant(key)}}
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr class="success" ng-repeat="val in value">
+				<td class="macros">{{val.name}}</td>
+				<td>{{val.carbs}}</td>
+				<td>{{val.protein}}</td>
+				<td>{{val.fats}}</td>
+				<td>{{val.calories}}</td>
+			</tr>
+		</tbody>
 		<tr>
-			<td>1</td>
-			<td>23233</td>
-			<td>323r</td>
 		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td>
-			<td>2r2k3j</td>
-			<td>3welr</td>
-		</tr>
-	</tbody> -->
-	<thead ng-repeat="(key, value) in restaurants">
-		<td colspan="3">{{key}}</td>
-		<tr ng-repeat="val in value">
-			<td>{{val.name}}</td>
-			<td>{{val.carbs}}</td>
-			<td>{{val.protein}}</td>
-			<td>{{val.fats}}</td>
-			<td>{{val.calories}}</td>
-		</tr>
-	</thead>
-	<tr>
-	</tr>
-</table>
+	</table>
+</div>
